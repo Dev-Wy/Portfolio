@@ -166,6 +166,624 @@ textarea {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+html, body {
+  height:100%
+}
+
+html{
+  color:#eeefda;
+  font-size: 16px;
+  line-height:1.4;
+}
+
+body{
+  background-color: #152a3e;
+  font-family: 'Noto Sans Display', sans-serif;
+}
+
+
+
+h1 {
+  font-family: 'Noto Sans Display', sans-serif;
+}
+
+h2 {
+  font-family:'Seaweed Script', cursive;
+  font-size: 4.3em;
+  text-align: center;
+}
+
+h3 {
+  font-family: 'Noto Sans Display', sans-serif;
+}
+
+h4 {
+  font-family: 'Noto Sans Display', sans-serif;
+}
+
+p {
+  font-size: 1em;
+  font-family: 'Noto Sans Display', sans-serif;
+}
+
+img {
+  display:flex;
+  width: 80%;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-wrapper {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+header {
+  display:flex;
+  background-color:#152a3e; 
+}
+
+header nav {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+li {
+  display:inline-block;
+  font-size: 1.2em;
+}
+
+a {
+  color:#ffffff;
+  text-decoration: none;
+  padding: 10px;
+}
+
+header nav ul {
+  list-style-type: none;
+  text-align:center;
+  margin: 0;
+  padding: 0;
+}
+
+header .content-wrapper {
+  width:100%;
+  margin-bottom: 30px;
+  margin-top: 40px;
+}
+
+.hero-image {
+  background:url("../img/self.JPEG") no-repeat;
+  background-position: center;
+  background-size: cover;
+  position:relative;
+  height:50%;
+  width:100%;
+  display: flex;
+  justify-content:right;
+  flex-flow:row wrap;
+  text-align: right;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+.hero-text {
+  color:#152a3e;
+  margin-right: 10px;
+}
+
+.hero-text h1 {
+  color:#152a3e;
+  font-family:'Seaweed Script', cursive;
+  font-size: 4em;
+  margin-right: 15px;
+  margin-bottom: .5em;
+}
+
+.hero-text h2 {
+  font-family: 'Noto Sans Display', sans-serif;
+  text-align: right;
+  font-size: 1.6em;
+}
+
+#projects {
+  background: #cac691;
+  color:#152a3e; 
+}
+
+#projects .content-wrapper {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin: 20px;
+}
+
+#projects .third-width {
+  text-align: center;
+  background: #152a3e;
+  color:#cac691;
+  margin-bottom: 80px;
+  margin-top:40px;
+  padding: 40px 10px 50px 10px;
+  border-radius: 5px;
+  box-shadow: 10px 15px rgba(0,0,0,.1), 0 23px 30px rgba(17,24,39,.2);
+}
+
+#projects h2 {
+  font-family:'Seaweed Script', cursive;
+  font-size:4em;
+  color:#152a3e;
+  margin-bottom: 30px;
+}
+
+#projects h3 {
+  color:#cac691;
+  font-size: 1.75em;
+  margin-top: 20px;
+}
+
+#projects img {
+  border: 5px solid #c2c4c2;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 0px;
+  width: 70%;
+  border-radius: 5px;
+}
+
+#projects p {
+  color: #c2c4c2;
+  font-size: 1.3em;
+}
+
+#projects a {
+  padding:0;
+}
+
+#projects h4{
+  font-size: 1.45em;
+  margin-bottom: 5px;
+}
+
+#projects ul{
+  margin-top: 0px;
+  padding-left: 0px;
+}
+
+#projects li {
+  background-color: #c2c4c2;
+  color:#152a3e;
+  line-height: 1.4;
+  font-weight: bold;
+  border-radius: 3px;
+  margin: 5px 3px;
+  padding: 2px 8px;
+}
+
+#projects button {
+  font-size: 1.45em;
+  font-weight: bold;
+  border-radius: 12px;
+  color:#152a3e;
+  background-color: #cac691;
+  margin-top: 15px;
+  padding: 10px 16px;
+}
+
+#projects a {
+color:#152a3e;
+}
+
+#skills {
+  padding:20px;
+}
+
+#skills h2 {
+  font-size: 3.4em;
+  text-align: center;
+  padding-bottom: 12px;
+}
+
+#skills h3 {
+  font-size: 1.75em;
+  text-align: center;
+}
+
+#skills .skills-wrapper {
+  margin-bottom: 80px;
+}
+
+#skills .skills-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  text-align: center;
+}
+
+#skills article {
+  text-align: center;
+  width: 40%;
+  padding: 10px;
+  display: block;
+}
+
+#skills ul {
+  text-align: center; 
+  padding-left: 0px; 
+}
+
+#skills li {
+  display:inline-block;
+  color:#cac691;
+  text-decoration: none;
+  font-size: 1.2em;
+  padding: 10px;
+}
+
+#skills i {
+  color:#cac691;
+  font-size:4em;
+}
+
+#skills p {
+  font-size: 1.3em;
+}
+
+#about {
+  background-color: #cac691;
+  color:#152a3e;
+  padding: 40px;
+  text-align: center;
+}
+
+#about h2 {
+  font-size: 3.4em;
+  padding-bottom: 10px;
+  /*border-bottom:1px solid #152a3e;*/
+}
+
+#about img {
+  border: 4px solid #152a3e;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 0px;
+  width: 70%;
+  border-radius: 5px;
+  box-shadow: 10px 15px rgba(0,0,0,.2), 0 23px 30px rgba(17,24,39,.2);
+}
+
+#about p {
+  padding-top: 10px;
+}
+
+#about .name {
+  font-family: 'Seaweed Script', cursive;
+  font-size: 3em;
+}
+
+#about .intro {
+  font-size: 1.7em;
+}
+
+#about .info .hobbies{
+  font-size: 18px;
+}
+
+#contact {
+  padding: 30px 0;
+}
+
+#contact .content-wrapper {
+  text-align: center;
+}
+
+#contact .half-width {
+  padding: 20px;
+}
+
+#contact h2 {
+  font-size: 3.4em;
+}
+
+#contact h3 {
+  padding-top: 20px;
+}
+
+#contact p {
+  padding: 70px 40px 10px 40px;
+}
+
+#contact ul {
+  padding-left: 0;
+}
+
+#contact i {
+  font-size: 2.3em;
+  padding: 10px;
+}
+
+/*----------TABLET----------*/
+@media screen and (min-width: 768px) {
+
+  header li {
+    font-size: 2em;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .hero-text h1 {
+    font-size: 8.5em;
+    padding-right: 25px;
+  }
+
+  .hero-text h2 {
+    font-size: 3.5em;
+  }
+
+  #projects .third-width {
+    padding: 100px 20px;
+    margin-left:20px;
+    margin-right: 20px;
+  }
+
+  #projects h2 {
+    font-size: 5em;
+  }
+
+  #projects h3 {
+    font-size: 2.3em;
+  }
+
+  #projects h4 {
+    font-size: 1.5em;
+  }
+
+  #projects p {
+    font-size: 1.1em;
+  }
+
+  #projects li {
+    font-size: 1.7em;
+    line-height: 1.3em;
+    padding: 2px 20px;
+  }
+
+  #projects button {
+    font-size: 1.9em;
+    padding: 17px 25px;
+  }
+
+  #skills h2 {
+    font-size: 5em;
+  }
+
+  #skills li {
+    font-size: 1.5em;
+    padding: 20px;
+  }
+  
+  #skills i {
+    color:#cac691;
+    font-size:4.2em;
+  }
+  
+  #skills p {
+    font-size: 1.5em;
+  }
+
+  #about h2 {
+    font-size: 5em;
+    margin-bottom: 25px;
+  }
+
+  #about img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 0px;
+    width: 120%;
+    margin:20px;
+    margin-left: 10px;
+  }
+  
+  #about .half-width-1 {
+    display: block;
+  }
+
+  #about .half-width-2 {
+    display:block;
+    justify-content: space-around;
+    padding-left: 90px;
+  }
+
+  #about .half-width-wrapper{
+    display:flex;
+    flex-flow:nowrap row;
+  }
+
+  #about .name {
+    font-family: 'Seaweed Script', cursive;
+    font-size: 3em;
+    flex-flow: row;
+    margin-top: 15px;
+    margin-bottom:20px;
+  }
+
+  #about .intro {
+    font-size: 1.3em;
+  }
+  
+  #about .info .hobbies {
+    font-size: 1em;
+  }
+
+  #contact h2 {
+    font-size: 5em;
+  }
+
+  #contact h3 {
+    font-size: 2.3em;
+  }
+  
+  #contact a {
+    font-size: 1.5em;
+  }
+  
+  #contact i {
+    font-size: 2.5em;
+    padding: 30px;
+  }
+}
+
+/*---------- DESKTOP ----------*/
+@media (min-width: 1200px) {
+  header {
+    margin-bottom: 60px;
+  }
+
+  header li {
+    font-size: 2.8em;
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+
+  .hero-text h1 {
+    font-size: 12em;
+    padding-right: 40px;
+  }
+
+  .hero-text h2 {
+    font-size: 4em;
+  }
+
+  #projects .full-width {
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    flex-flow: row wrap;
+    text-align: center;
+  }
+
+  #projects .third-width {
+    flex-basis: 28%;
+    padding: 50px 10px;
+  }
+
+  #projects img {
+    width: 80%;
+  }
+
+  #projects li {
+    font-size: 1.2em;
+    padding: 5px 10px;
+  }
+  
+  #projects h2 {
+    font-size: 8em;
+  }
+
+  #projects h3 {
+    font-size: 1.8em;
+  }
+
+  #projects h4 {
+      font-size: 1.5em;
+  }
+
+  #projects button {
+    font-size: 1.6em;
+    margin-top: 25px;
+    padding: 10px 20px;
+  }
+
+  #skills {
+    margin: 80px 10px;
+  }
+  
+  #skills h2 {
+    font-size: 7.5em;
+    text-align: center;
+    padding: none;
+    margin-bottom: 30px;
+  }
+  
+  #skills h3 {
+    font-size: 2em;
+    text-align: center;
+  }
+  
+  #skills article {
+    text-align: center;
+    width: 17%;
+    padding: 5px;
+    display: block;
+  }
+  
+  #skills ul {
+    text-align: center; 
+    padding-left: 0px; 
+  }
+  
+  #skills li {
+    font-size: 1.5em;
+    padding: 20px;
+  }
+  
+  #skills i {
+    color:#cac691;
+    font-size:4em;
+  }
+  
+  #skills p {
+    font-size: 1.5em;
+  }
+  
+  #about .content-wrapper{
+    margin: 60px 20px;
+  }
+
+  #about h2 {
+    font-size: 8em;
+  }
+
+  #about .name {
+    font-family: 'Seaweed Script', cursive;
+    font-size: 4em;
+    flex-flow: row;
+    margin-top: 15px;
+    margin-bottom:20px;
+  }
+
+  #about .intro {
+    font-size: 1.8em;
+  }
+  
+  #about .info {
+    font-size: 1.5em;
+  }
+
+  #about .hobbies {
+    font-size: 1.5em;
+  }
+
+  #contact h2 {
+    font-size: 5em;
+  }
+
+  #contact h3 {
+    font-size: 2.3em;
+  }
+  
+  #contact a {
+    font-size: 1.5em;
+  }
+  
+  #contact i {
+    font-size: 2.5em;
+    padding: 30px;
+  }
+}
 
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */
@@ -183,6 +801,7 @@ textarea {
    Inlined to avoid the additional HTTP request:
    https://www.phpied.com/delay-loading-your-print-css/
    ========================================================================== */
+
 
 @media print {
   *,
