@@ -543,8 +543,8 @@ header .content-wrapper {
     font-size: 1.5em;
   }
 
-  #projects p {
-    font-size: 1.7em;
+  /*#projects p {
+    font-size: 1em;
   }
 
   #projects .skills-used li {
@@ -552,9 +552,9 @@ header .content-wrapper {
     line-height: 1.3em;
     padding: 2px 20px;
   }
-
+*/
   #projects .project-link {
-    font-size: 1.9em;
+    font-size: 1.5em;
     padding: 17px 25px;
   }
 
@@ -666,7 +666,6 @@ header .content-wrapper {
   #projects .full-width {
     display: flex;
     justify-content: center;
-    /*align-items: top;*/
     flex-flow: row wrap;
     text-align: center;
   }
@@ -697,8 +696,15 @@ header .content-wrapper {
       font-size: 1.5em;
   }
 
+  #projects p {
+    font-size: 1em;
+  }
+
+  #project .skills-used li {
+    font-size: 1em;
+  }
   #projects .project-link {
-    font-size: 1.6em;
+    font-size: 1.5em;
     margin-top: 25px;
     padding: 10px 20px;
   }
