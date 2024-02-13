@@ -166,7 +166,8 @@ textarea {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
-html, body {
+
+   html, body {
   height:100%
 }
 
@@ -180,8 +181,6 @@ body{
   background-color: #152a3e;
   font-family: 'Noto Sans Display', sans-serif;
 }
-
-
 
 h1 {
   font-family: 'Noto Sans Display', sans-serif;
@@ -307,6 +306,16 @@ header .content-wrapper {
   box-shadow: 10px 15px rgba(0,0,0,.1), 0 23px 30px rgba(17,24,39,.2);
 }
 
+#projects img {
+  border: 5px solid #c2c4c2;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 0px;
+  width: 70%;
+  border-radius: 5px;
+}
+
 #projects h2 {
   font-family:'Seaweed Script', cursive;
   font-size:4em;
@@ -320,28 +329,14 @@ header .content-wrapper {
   margin-top: 20px;
 }
 
-#projects img {
-  border: 5px solid #c2c4c2;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding-bottom: 0px;
-  width: 70%;
-  border-radius: 5px;
+#projects h4{
+  font-size: 1.2em;
+  margin-bottom: 10px;
 }
 
 #projects p {
   color: #c2c4c2;
-  font-size: 1.3em;
-}
-
-#projects a {
-  padding:0;
-}
-
-#projects h4{
-  font-size: 1.45em;
-  margin-bottom: 5px;
+  font-size: 1em;
 }
 
 #projects ul{
@@ -349,43 +344,36 @@ header .content-wrapper {
   padding-left: 0px;
 }
 
-#projects li {
+#projects .skills-used li {
   background-color: #c2c4c2;
   color:#152a3e;
+  font-size: 1em;;
   line-height: 1.4;
   font-weight: bold;
   border-radius: 3px;
   margin: 5px 3px;
-  padding: 2px 8px;
+  padding: 1px 5px;
 }
 
-#projects button {
-  font-size: 1.45em;
+#projects .skills-used {
+  margin-bottom: 30px;
+}
+#projects a.project-link {
+  color:#152a3e;
+  padding: 5px 16px;
+  margin-bottom: 10px;
+}
+
+#projects .project-link {
+  font-size: 1em;
   font-weight: bold;
   border-radius: 12px;
   color:#152a3e;
   background-color: #cac691;
-  margin-top: 15px;
-  padding: 10px 16px;
-}
-
-#projects a {
-color:#152a3e;
 }
 
 #skills {
   padding:20px;
-}
-
-#skills h2 {
-  font-size: 3.4em;
-  text-align: center;
-  padding-bottom: 12px;
-}
-
-#skills h3 {
-  font-size: 1.75em;
-  text-align: center;
 }
 
 #skills .skills-wrapper {
@@ -400,11 +388,26 @@ color:#152a3e;
   text-align: center;
 }
 
-#skills article {
+#skills .skill {
   text-align: center;
   width: 40%;
   padding: 10px;
   display: block;
+}
+
+#skills h2 {
+  font-size: 3.4em;
+  text-align: center;
+  padding-bottom: 12px;
+}
+
+#skills h3 {
+  font-size: 1.75em;
+  text-align: center;
+}
+
+#skills p {
+  font-size: 1.3em;
 }
 
 #skills ul {
@@ -420,13 +423,14 @@ color:#152a3e;
   padding: 10px;
 }
 
-#skills i {
+#skills i.fa-brands {
   color:#cac691;
-  font-size:4em;
+  font-size:5em;
 }
 
-#skills p {
-  font-size: 1.3em;
+#skills i.fa-solid {
+  color:#cac691;
+  font-size:5em;
 }
 
 #about {
@@ -442,6 +446,10 @@ color:#152a3e;
   /*border-bottom:1px solid #152a3e;*/
 }
 
+#about p {
+  padding-top: 10px;
+}
+
 #about img {
   border: 4px solid #152a3e;
   display: block;
@@ -451,10 +459,6 @@ color:#152a3e;
   width: 70%;
   border-radius: 5px;
   box-shadow: 10px 15px rgba(0,0,0,.2), 0 23px 30px rgba(17,24,39,.2);
-}
-
-#about p {
-  padding-top: 10px;
 }
 
 #about .name {
@@ -540,38 +544,40 @@ color:#152a3e;
   }
 
   #projects p {
-    font-size: 1.1em;
+    font-size: 1.7em;
   }
 
-  #projects li {
+  #projects .skills-used li {
     font-size: 1.7em;
     line-height: 1.3em;
     padding: 2px 20px;
   }
 
-  #projects button {
+  #projects .project-link {
     font-size: 1.9em;
     padding: 17px 25px;
   }
 
+  #skills .skill {
+    text-align: center;
+    width: 17%;
+    padding: 10px;
+    display: block;
+  }
+
   #skills h2 {
     font-size: 5em;
+  }
+   
+  #skills p {
+    font-size: 1.5em;
   }
 
   #skills li {
     font-size: 1.5em;
     padding: 20px;
   }
-  
-  #skills i {
-    color:#cac691;
-    font-size:4.2em;
-  }
-  
-  #skills p {
-    font-size: 1.5em;
-  }
-
+ 
   #about h2 {
     font-size: 5em;
     margin-bottom: 25px;
@@ -660,7 +666,7 @@ color:#152a3e;
   #projects .full-width {
     display: flex;
     justify-content: center;
-    align-items: top;
+    /*align-items: top;*/
     flex-flow: row wrap;
     text-align: center;
   }
@@ -691,7 +697,7 @@ color:#152a3e;
       font-size: 1.5em;
   }
 
-  #projects button {
+  #projects .project-link {
     font-size: 1.6em;
     margin-top: 25px;
     padding: 10px 20px;
@@ -704,7 +710,7 @@ color:#152a3e;
   #skills h2 {
     font-size: 7.5em;
     text-align: center;
-    padding: none;
+    padding: 0;
     margin-bottom: 30px;
   }
   
@@ -713,11 +719,15 @@ color:#152a3e;
     text-align: center;
   }
   
-  #skills article {
+  #skills h5 {
     text-align: center;
     width: 17%;
     padding: 5px;
     display: block;
+  }
+
+  #skills p {
+    font-size: 1.5em;
   }
   
   #skills ul {
@@ -733,10 +743,6 @@ color:#152a3e;
   #skills i {
     color:#cac691;
     font-size:4em;
-  }
-  
-  #skills p {
-    font-size: 1.5em;
   }
   
   #about .content-wrapper{
