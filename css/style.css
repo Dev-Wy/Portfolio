@@ -563,7 +563,7 @@ h2 {
     width: 17%;
     padding: 10px;
     display: block;
-    margin: 2%;
+    margin: 3%;
   }
 
   #skills h2 {
@@ -571,12 +571,17 @@ h2 {
   }
    
   #skills p {
-    font-size: 1.5em;
+    font-size: 1.3em;
   }
 
   #skills li {
-    font-size: 1.5em;
+    font-size: 1.3em;
     padding: 20px;
+  }
+
+  #skills i.fa-brands, #skills i.fa-solid {
+    color:#cac691;
+    font-size: 4em;
   }
  
 /***Tablet About***/
@@ -727,6 +732,14 @@ h2 {
   #skills {
     margin: 80px 10px;
   }
+
+  #skills .skill {
+    text-align: center;
+    width: 20%;
+    padding: 10px;
+    display: block;
+    margin: 3%;
+  }
   
   #skills h2 {
     text-align: center;
@@ -738,16 +751,9 @@ h2 {
     font-size: 2em;
     text-align: center;
   }
-  
-  #skills h5 {
-    text-align: center;
-    width: 17%;
-    padding: 5px;
-    display: block;
-  }
 
   #skills p {
-    font-size: 1.5em;
+    font-size: 1.3em;
   }
   
   #skills ul {
@@ -756,13 +762,13 @@ h2 {
   }
   
   #skills li {
-    font-size: 1.5em;
+    font-size: 1.3em;
     padding: 20px;
   }
   
-  #skills i {
+  #skills i.fa-brands, #skills i.fa-solid {
     color:#cac691;
-    font-size:4em;
+    font-size: 4em;
   }
  
 /***Desktop About***/  
