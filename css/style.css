@@ -166,15 +166,17 @@ textarea {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
-
-   html, body {
+html, body {
   height:100%
 }
 
-html{
-  color:#eeefda;
-  font-size: 16px;
-  line-height:1.4;
+@media (prefers-reduced-motion: no-preference) {
+  html{
+    scroll-behavior: smooth;  
+    color:#eeefda;
+    font-size: 16px;
+    line-height:1.4;
+  }
 }
 
 body{
@@ -188,16 +190,18 @@ h1 {
 
 h2 {
   font-family:'Seaweed Script', cursive;
-  font-size: 4.3em;
   text-align: center;
+  font-size: 2.5em;
 }
 
 h3 {
   font-family: 'Noto Sans Display', sans-serif;
+  font-size: 1.5em;
 }
 
 h4 {
   font-family: 'Noto Sans Display', sans-serif;
+  font-size: 1.1em;
 }
 
 p {
@@ -217,6 +221,8 @@ img {
   margin-bottom: 50px;
 }
 
+/***Header***/
+
 header {
   display:flex;
   background-color:#152a3e; 
@@ -229,7 +235,7 @@ header nav {
 
 li {
   display:inline-block;
-  font-size: 1.2em;
+  font-size: 1em;
 }
 
 a {
@@ -248,11 +254,11 @@ header nav ul {
 header .content-wrapper {
   width:100%;
   margin-bottom: 30px;
-  margin-top: 40px;
+  margin-top: 50px;
 }
 
 .hero-image {
-  background:url("../img/self.JPEG") no-repeat;
+  background:url("../img/self.jpg") no-repeat;
   background-position: center;
   background-size: cover;
   position:relative;
@@ -265,6 +271,7 @@ header .content-wrapper {
   margin-top: 30px;
   margin-bottom: 50px;
 }
+
 .hero-text {
   color:#152a3e;
   margin-right: 10px;
@@ -273,7 +280,7 @@ header .content-wrapper {
 .hero-text h1 {
   color:#152a3e;
   font-family:'Seaweed Script', cursive;
-  font-size: 4em;
+  font-size: 2.5em;
   margin-right: 15px;
   margin-bottom: .5em;
 }
@@ -281,8 +288,10 @@ header .content-wrapper {
 .hero-text h2 {
   font-family: 'Noto Sans Display', sans-serif;
   text-align: right;
-  font-size: 1.6em;
+  font-size: 1em;
 }
+
+/***Projects***/
 
 #projects {
   background: #cac691;
@@ -290,18 +299,18 @@ header .content-wrapper {
 }
 
 #projects .content-wrapper {
-  padding-top: 40px;
-  padding-bottom: 40px;
-  margin: 20px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin: 40px;
 }
 
 #projects .third-width {
-  text-align: center;
+  text-align: left;
   background: #152a3e;
   color:#cac691;
   margin-bottom: 80px;
   margin-top:40px;
-  padding: 40px 10px 50px 10px;
+  padding: 40px 20px 75px 20px;
   border-radius: 5px;
   box-shadow: 10px 15px rgba(0,0,0,.1), 0 23px 30px rgba(17,24,39,.2);
 }
@@ -311,32 +320,28 @@ header .content-wrapper {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 0px;
-  width: 70%;
+  padding: 0px;
+  width: 90%;
   border-radius: 5px;
 }
 
 #projects h2 {
   font-family:'Seaweed Script', cursive;
-  font-size:4em;
   color:#152a3e;
   margin-bottom: 30px;
 }
 
 #projects h3 {
   color:#cac691;
-  font-size: 1.75em;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 #projects h4{
-  font-size: 1.2em;
   margin-bottom: 10px;
 }
 
 #projects p {
   color: #c2c4c2;
-  font-size: 1em;
 }
 
 #projects ul{
@@ -348,7 +353,7 @@ header .content-wrapper {
   background-color: #c2c4c2;
   color:#152a3e;
   font-size: 1em;;
-  line-height: 1.4;
+  line-height: 1.3;
   font-weight: bold;
   border-radius: 3px;
   margin: 5px 3px;
@@ -361,16 +366,22 @@ header .content-wrapper {
 #projects a.project-link {
   color:#152a3e;
   padding: 5px 16px;
-  margin-bottom: 10px;
+  text-align: center;
 }
 
 #projects .project-link {
   font-size: 1em;
   font-weight: bold;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   border-radius: 12px;
   color:#152a3e;
   background-color: #cac691;
+  margin-bottom: 10px;
 }
+
+/***Skills***/
 
 #skills {
   padding:20px;
@@ -396,18 +407,12 @@ header .content-wrapper {
 }
 
 #skills h2 {
-  font-size: 3.4em;
   text-align: center;
   padding-bottom: 12px;
 }
 
 #skills h3 {
-  font-size: 1.75em;
   text-align: center;
-}
-
-#skills p {
-  font-size: 1.3em;
 }
 
 #skills ul {
@@ -425,25 +430,25 @@ header .content-wrapper {
 
 #skills i.fa-brands {
   color:#cac691;
-  font-size:5em;
+  font-size:3em;
 }
 
 #skills i.fa-solid {
   color:#cac691;
-  font-size:5em;
+  font-size:3em;
 }
+
+/***About***/
 
 #about {
   background-color: #cac691;
   color:#152a3e;
   padding: 40px;
-  text-align: center;
+  text-align: left;
 }
 
 #about h2 {
-  font-size: 3.4em;
   padding-bottom: 10px;
-  /*border-bottom:1px solid #152a3e;*/
 }
 
 #about p {
@@ -451,28 +456,29 @@ header .content-wrapper {
 }
 
 #about img {
-  border: 4px solid #152a3e;
+  border: 3.5px solid #152a3e;
   display: block;
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 0px;
-  width: 70%;
+  width: 80%;
   border-radius: 5px;
-  box-shadow: 10px 15px rgba(0,0,0,.2), 0 23px 30px rgba(17,24,39,.2);
+  box-shadow: 10px 15px rgba(0,0,0,.1), 0 23px 30px rgba(17,24,39,.2);
 }
 
-#about .name {
+#about p.name {
   font-family: 'Seaweed Script', cursive;
-  font-size: 3em;
+  font-size: 2.8em;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 
-#about .intro {
-  font-size: 1.7em;
+#about p.intro {
+  font-size: 1.5em;
+  padding-top: 0px;
 }
 
-#about .info .hobbies{
-  font-size: 18px;
-}
+/***Contact***/
 
 #contact {
   padding: 30px 0;
@@ -484,10 +490,6 @@ header .content-wrapper {
 
 #contact .half-width {
   padding: 20px;
-}
-
-#contact h2 {
-  font-size: 3.4em;
 }
 
 #contact h3 {
@@ -508,7 +510,16 @@ header .content-wrapper {
 }
 
 /*----------TABLET----------*/
-@media screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1199px){
+/*Tablet Styles Here*/
+
+/***General Styles***/
+h2 {
+  font-size: 4em;
+}
+
+/***Tablet Header***/
+
 
   header li {
     font-size: 2em;
@@ -517,52 +528,42 @@ header .content-wrapper {
   }
 
   .hero-text h1 {
-    font-size: 8.5em;
+    font-size: 5em;
     padding-right: 25px;
   }
 
   .hero-text h2 {
-    font-size: 3.5em;
+    font-size: 2.5em;
+  }
+
+/***Tablet Projects***/
+
+  #projects .full-width {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    text-align: center;
+    gap: 10%;
   }
 
   #projects .third-width {
-    padding: 100px 20px;
-    margin-left:20px;
-    margin-right: 20px;
+    flex-basis: 35%;
+    padding: 50px 30px 75px 30px;
   }
 
-  #projects h2 {
-    font-size: 5em;
-  }
-
-  #projects h3 {
-    font-size: 2.3em;
-  }
-
-  #projects h4 {
-    font-size: 1.5em;
-  }
-
-  /*#projects p {
-    font-size: 1em;
-  }
-
-  #projects .skills-used li {
-    font-size: 1.7em;
-    line-height: 1.3em;
-    padding: 2px 20px;
-  }
-*/
   #projects .project-link {
     font-size: 1.5em;
     padding: 17px 25px;
   }
+
+/***Tablet Skills***/
 
   #skills .skill {
     text-align: center;
     width: 17%;
     padding: 10px;
     display: block;
+    margin: 2%;
   }
 
   #skills h2 {
@@ -578,29 +579,34 @@ header .content-wrapper {
     padding: 20px;
   }
  
+/***Tablet About***/
+
   #about h2 {
-    font-size: 5em;
     margin-bottom: 25px;
   }
-
   #about img {
     display: block;
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 0px;
-    width: 120%;
-    margin:20px;
+    margin: 20px 20px 20px 20px;
     margin-left: 10px;
+    object-fit: contain;
   }
   
-  #about .half-width-1 {
+  #about .full-width {
+    gap: 30%;
+  }
+  #about div.half-width-1 {
     display: block;
+    object-fit: contain;
+    width: 40%;
   }
 
-  #about .half-width-2 {
+  #about div.half-width-2 {
     display:block;
     justify-content: space-around;
-    padding-left: 90px;
+    width: 60%;
   }
 
   #about .half-width-wrapper{
@@ -608,11 +614,11 @@ header .content-wrapper {
     flex-flow:nowrap row;
   }
 
-  #about .name {
+  #about p.name {
     font-family: 'Seaweed Script', cursive;
     font-size: 3em;
     flex-flow: row;
-    margin-top: 15px;
+    margin-top: 0px;
     margin-bottom:20px;
   }
 
@@ -623,6 +629,8 @@ header .content-wrapper {
   #about .info .hobbies {
     font-size: 1em;
   }
+
+/***Tablet Contact***/
 
   #contact h2 {
     font-size: 5em;
@@ -644,18 +652,24 @@ header .content-wrapper {
 
 /*---------- DESKTOP ----------*/
 @media (min-width: 1200px) {
+  
+/***Desktop Header***/
+  h2 {
+    font-size: 6em;
+  }
+
   header {
     margin-bottom: 60px;
   }
 
   header li {
-    font-size: 2.8em;
+    font-size: 2.5em;
     padding-left: 35px;
     padding-right: 35px;
   }
 
   .hero-text h1 {
-    font-size: 12em;
+    font-size: 8em;
     padding-right: 40px;
   }
 
@@ -663,16 +677,19 @@ header .content-wrapper {
     font-size: 4em;
   }
 
+/***Desktop Projects***/
+
   #projects .full-width {
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
     text-align: center;
+    gap: 4%;
   }
 
   #projects .third-width {
-    flex-basis: 28%;
-    padding: 50px 10px;
+    flex-basis: 26%;
+    padding: 50px 25px 65px 25px;
   }
 
   #projects img {
@@ -682,10 +699,6 @@ header .content-wrapper {
   #projects li {
     font-size: 1.2em;
     padding: 5px 10px;
-  }
-  
-  #projects h2 {
-    font-size: 8em;
   }
 
   #projects h3 {
@@ -709,15 +722,16 @@ header .content-wrapper {
     padding: 10px 20px;
   }
 
+/***Desktop Skills***/
+
   #skills {
     margin: 80px 10px;
   }
   
   #skills h2 {
-    font-size: 7.5em;
     text-align: center;
     padding: 0;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
   }
   
   #skills h3 {
@@ -750,16 +764,49 @@ header .content-wrapper {
     color:#cac691;
     font-size:4em;
   }
-  
+ 
+/***Desktop About***/  
+
+  #about h2 {
+    margin-bottom: 40px;
+  }
+
   #about .content-wrapper{
     margin: 60px 20px;
   }
 
-  #about h2 {
-    font-size: 8em;
+  #about img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 0px;
+    margin: 20px 40px 20px 20px;
+    margin-left: 10px;
+    object-fit: contain;
+  }
+  
+  #about .full-width {
+    gap: 30%;
+  }
+  #about div.half-width-1 {
+    display: block;
+    object-fit: contain;
+    width: 35%;
   }
 
-  #about .name {
+  #about div.half-width-2 {
+    display:block;
+    justify-content: space-around;
+    width: 70%;
+  }
+
+  #about .half-width-wrapper {
+    display:flex;
+    flex-flow:nowrap row;
+    
+  }
+
+  #about p.name {
     font-family: 'Seaweed Script', cursive;
     font-size: 4em;
     flex-flow: row;
@@ -767,26 +814,12 @@ header .content-wrapper {
     margin-bottom:20px;
   }
 
-  #about .intro {
+  #about p.intro {
     font-size: 1.8em;
   }
   
-  #about .info {
-    font-size: 1.5em;
-  }
+/***Desktop Contact***/
 
-  #about .hobbies {
-    font-size: 1.5em;
-  }
-
-  #contact h2 {
-    font-size: 5em;
-  }
-
-  #contact h3 {
-    font-size: 2.3em;
-  }
-  
   #contact a {
     font-size: 1.5em;
   }
