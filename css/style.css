@@ -510,6 +510,7 @@ header .content-wrapper {
 }
 
 /*----------TABLET----------*/
+
 @media only screen and (min-width: 768px) and (max-width: 1199px){
 /*Tablet Styles Here*/
 
@@ -656,7 +657,8 @@ h2 {
 }
 
 /*---------- DESKTOP ----------*/
-@media (min-width: 1200px) {
+
+@media only screen and (min-width: 1200px) {
   
 /***Desktop Header***/
   h2 {
