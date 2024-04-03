@@ -248,13 +248,13 @@ header nav ul {
   list-style-type: none;
   text-align:center;
   margin: 0;
-  padding: 0;
+  padding: 5px 0 5px 0;
 }
 
 header .content-wrapper {
   width:100%;
   margin-bottom: 30px;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 .hero-image {
@@ -268,7 +268,7 @@ header .content-wrapper {
   justify-content:right;
   flex-flow:row wrap;
   text-align: right;
-  margin-top: 30px;
+  margin-top: 20px;
   margin-bottom: 50px;
 }
 
@@ -527,6 +527,10 @@ h2 {
     padding-right: 15px;
   }
 
+  header nav ul {
+    padding: 7px 0 7px 0;
+  }
+
   .hero-text h1 {
     font-size: 5em;
     padding-right: 25px;
@@ -589,6 +593,7 @@ h2 {
   #about h2 {
     margin-bottom: 25px;
   }
+
   #about img {
     display: block;
     margin-left: auto;
@@ -673,6 +678,9 @@ h2 {
     padding-left: 35px;
     padding-right: 35px;
   }
+  header nav ul {
+    padding: 7px 0 7px 0;
+  }
 
   .hero-text h1 {
     font-size: 8em;
@@ -722,6 +730,7 @@ h2 {
   #project .skills-used li {
     font-size: 1em;
   }
+
   #projects .project-link {
     font-size: 1.5em;
     margin-top: 25px;
@@ -795,6 +804,7 @@ h2 {
   #about .full-width {
     gap: 30%;
   }
+
   #about div.half-width-1 {
     display: block;
     object-fit: contain;
@@ -810,7 +820,6 @@ h2 {
   #about .half-width-wrapper {
     display:flex;
     flex-flow:nowrap row;
-    
   }
 
   #about p.name {
