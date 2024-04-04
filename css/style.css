@@ -522,13 +522,14 @@ h2 {
 /***Tablet Header***/
 
   header li {
-    font-size: 1.9em;
+    font-size: 1.8em;
     padding-left: 15px;
     padding-right: 15px;
   }
 
   header nav ul {
-    padding: 7px 0 7px 0;
+    margin-top: 10px;
+    padding: 10px 0 7px 0;
   }
 
   .hero-text h1 {
@@ -607,6 +608,7 @@ h2 {
   #about .full-width {
     gap: 30%;
   }
+  
   #about div.half-width-1 {
     display: block;
     object-fit: contain;
@@ -678,8 +680,10 @@ h2 {
     padding-left: 35px;
     padding-right: 35px;
   }
+
   header nav ul {
-    padding: 7px 0 7px 0;
+    margin: 10px 0 10px 0;
+    padding: 10px 0 10px 0;
   }
 
   .hero-text h1 {
