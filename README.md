@@ -15,7 +15,7 @@
 - I am a Frontend Web Developer based in the Greater Philadelphia area. I am proficient in HTML5, CSS, Bootstrap5, Vanilla JavaScript, React.js, and am currently working with WordPress. I look forward to collaborating with individuals or companies to create inovative solutions to everyday problems especially those facing today's educators.
 
 ### Screenshot
-![](img/screenshot.png)
+![](img/PortfolioScreenshot.png)
 
 ### Links
 - Solution URL:
