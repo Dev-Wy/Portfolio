@@ -227,12 +227,19 @@ header {
   display:flex;
   background-color:#152a3e; 
 }
+header .headliner {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 20px;
+  align-items: center;
+}
 
-header nav {
+/*header nav {
   padding-top: 20px;
   padding-bottom: 20px;
 }
-
+*/
 li {
   display:inline-block;
   font-size: 1em;
@@ -520,8 +527,17 @@ h2 {
 }
 
 /***Tablet Header***/
+  header .headliner {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color:#152a3e;
+    height: 8%;
+    display: flex;
+    flex-direction: row;
+  }
 
-  header li {
+  /*header li {
     font-size: 1.8em;
     padding-left: 15px;
     padding-right: 15px;
@@ -530,8 +546,10 @@ h2 {
   header nav ul {
     margin-top: 10px;
     padding: 10px 0 7px 0;
+  }*/
+  .hero-image {
+    margin-top: 60px;
   }
-
   .hero-text h1 {
     font-size: 5em;
     padding-right: 25px;
